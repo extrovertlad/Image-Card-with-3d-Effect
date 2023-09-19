@@ -1,0 +1,55 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.card img{
+    height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: all .45s ease;
+}
+.card img:hover{
+    cursor: pointer;
+    transform: scale(1.9);
+    box-shadow: 0 0 20px #00fffc;
+    margin: 5px;
+}
+.gallery{
+    display: flex;
+    gap: 16px;
+    scale: 1.6;
+}
+
+                                                                            /* we are learned a new css property */
+.gallery:hover > img:not(:hover){
+    opacity: 0.1;
+}
+
+.he{
+    color: rgb(248, 59, 147);
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    font-size: 50px;
+    transition: all .45s ease;
+    text-transform: uppercase;
+    border: 5px solid pink;
+    padding: 1%;
+    border-radius: 15px;
+}
+.he:hover{
+    transform: scale(1.5);
+    /* text-shadow: 3px 3px 15px #00fffc; */
+    /* box-shadow: 0 0 20px rgb(255, 255, 255); */
+}
